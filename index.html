@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/ce7890bcb0.js" crossorigin="anonymous"></script>
+    <title>To do list</title>
+</head>
+
+<body>
+    <div class="main ">
+        <div class="home-screen screen">
+            <div class="head">
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="intro">
+                    <h1>Hello Navneet</h1>
+                    <p>Today you have <span id="total-tasks"></span> tasks</p>
+                </div>
+            </div>
+            <div class="category-section">
+                <div class="categories">
+                    <div class="category">
+                        <h1>Personal</h1>
+                        <p>0 Tasks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="category-screen screen">
+            <div class="head1">
+                <div class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="category-details">
+                    <h1 class="category-title">Personal</h1>
+                    <p class="category-tasks">0 tasks</p>
+                </div>
+            </div>
+            <div class="tasks-screen">
+                <div class="tasks">
+                    <div class="task-wrapper">
+                        <label for="task" class="task">
+                            <input type="checkbox" name="task" id="task" />
+                            <p></p>
+                        </label>
+                        <div class="delete">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-task-btn">
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="add-task">
+            <h1 class="heading">Add Task</h1>
+            <div class="input-group">
+                <label for="task-input">Task</label>
+                <input type="text" id="task-input" required />
+            </div>
+            <div class="input-group">
+                <label for="category-select"> Category </label>
+                <select id="category-select"></select>
+            </div>
+            <div class="btns">
+                <button class="cancel-btn">Cancel</button>
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
